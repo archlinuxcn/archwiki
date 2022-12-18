@@ -147,6 +147,17 @@ header.mw-header li:not(.new), // Vector
       color: var(--archwiki-link-color-active) !important;
     }
   }
+
+  // Mobile "edit" links etc
+  @media (max-width: 1000px) {
+    .mw-ui-button.mw-ui-icon-element.mw-ui-icon-with-label-desktop {
+      color: transparent !important;
+    }
+  }
+  a.mw-ui-button.mw-ui-icon-element:not(.mw-ui-icon-with-label-desktop) {
+    color: transparent !important;
+  }
+
 }
 
 /* Color of visited links for content and left column
