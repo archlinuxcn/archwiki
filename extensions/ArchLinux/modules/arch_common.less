@@ -114,6 +114,16 @@ body {
     }
 }
 
+/* Color of visited links for content and left column
+ * (not for MediaWiki navigation elements above the page) */
+#content,
+#mw-panel li:not(.new),       // Legacy Vector
+{
+  a:not(.new):not([role=button]):visited {
+    color: @link-color-visited !important;
+  }
+}
+
 /* Colors of links in the content, MediaWiki navigation and the footer */
 #content,
 header.mw-header li:not(.new), // Vector
@@ -154,16 +164,6 @@ header.mw-header li:not(.new), // Vector
 // override vector-2022 talk link
 #content li.new > a:not(.new) {
   color: #dd3333 !important;
-}
-
-/* Color of visited links for content and left column
- * (not for MediaWiki navigation elements above the page) */
-#content,
-#mw-panel li:not(.new),       // Legacy Vector
-{
-  a:not(.new):not([role=button]):visited {
-    color: @link-color-visited !important;
-  }
 }
 
 /* Color for links to inexistent pages */
